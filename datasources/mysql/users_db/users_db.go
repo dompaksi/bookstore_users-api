@@ -3,7 +3,8 @@ package users_db
 import (
 	"database/sql"
 	"fmt"
-	_ "github.com/go-sql-driver/mysql"
+	"github.com/dompaksi/bookstore_utils-go/logger"
+	"github.com/go-sql-driver/mysql"
 	"log"
 	"os"
 )
@@ -23,12 +24,12 @@ var (
 	schema   = os.Getenv(mysqlUsersSchema)
 )
 
-func init() {
+/*func init() {
 	datasourceName := fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=utf8",
-		"root",
-		"root",
-		"localhost:3306",
-		"user_db",
+		username,
+		password,
+		host,
+		schema,
 	)
 	var err error
 	Client, err := sql.Open("mysql", datasourceName)
@@ -42,4 +43,21 @@ func init() {
 
 	log.Println("database configured successful")
 
+}*/
+
+func init() {
+	dataSourceName := fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=utf8",
+		username, password, host, schema,
+	)
+	var err error
+	Client, err = sql.Open("mysql", dataSourceName)
+	if err != nil {
+		panic(err)
+	}
+	if err = Client.Ping(); err != nil {
+		panic(err)
+	}
+
+	mysql.SetLogger(logger.GetLogger())
+	log.Println("database successfully configured")
 }

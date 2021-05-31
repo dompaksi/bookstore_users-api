@@ -6,9 +6,13 @@ import (
 )
 
 func UsersMapUrls() {
-	router.POST("/users", users.CreateUser)
-	router.GET("/users/:user_id", users.GetUser)
-	//router.GET("/users/search", controllers.FindUser)
+	router.POST("/users", users.Create)
+	router.GET("/users/:userId", users.Get)
+	router.PUT("/users/:userId", users.Update)
+	router.PATCH("/users/:userId", users.Update)
+	//router.DELETE("/users/:userId", users.Delete)
+	//router.GET("/internal/users/search", users.Search)
+	//router.POST("/users/login", users.Login)
 }
 
 func PingMapUrls() {
