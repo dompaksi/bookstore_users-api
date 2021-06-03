@@ -10,9 +10,9 @@ func UsersMapUrls() {
 	router.GET("/users/:userId", users.Get)
 	router.PUT("/users/:userId", users.Update)
 	router.PATCH("/users/:userId", users.Update)
-	//router.DELETE("/users/:userId", users.Delete)
-	//router.GET("/internal/users/search", users.Search)
-	//router.POST("/users/login", users.Login)
+	router.DELETE("/users/:userId", users.Delete)
+	router.GET("/internal/users/search", users.Search)
+	router.POST("/users/login", users.Login)
 }
 
 func PingMapUrls() {
