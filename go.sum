@@ -2,8 +2,8 @@ github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSs
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/dompaksi/bookstore_oauth-go v0.0.0-20210603084728-24c1bcf4357c h1:IC9g4QO9317c+hfGvbH/pJvRVCuq/brshgOLDmzLmq0=
 github.com/dompaksi/bookstore_oauth-go v0.0.0-20210603084728-24c1bcf4357c/go.mod h1:176yPnjahIJzDmsLIfjP6N8nQ7Vd9nofYAoUjw9Z+J4=
-github.com/dompaksi/bookstore_utils-go v0.0.0-20210531064144-7894bf5a9a45 h1:K35JcibJzIqYg8bNDntUYe11OidpmjiD53O0RXfSRUs=
-github.com/dompaksi/bookstore_utils-go v0.0.0-20210531064144-7894bf5a9a45/go.mod h1:B9gftnyeSfzs2MWBpHPPjNL0OdHhRwc9GCVNcKDRayc=
+github.com/dompaksi/bookstore_utils-go v0.0.0-20210606065356-8c9e3b809059 h1:5Two5bO0QJsuLbAFHGe6SwWWY+PMu5KcXd+ykGZRnQg=
+github.com/dompaksi/bookstore_utils-go v0.0.0-20210606065356-8c9e3b809059/go.mod h1:IQNyY5DjCuMVbSr5PXBaDuP2wjlejtc8j+EpxBMSDlI=
 github.com/gin-contrib/sse v0.1.0 h1:Y/yl/+YNO8GZSjAhjMsSuLt29uWRFHdHYUb5lYOV9qE=
 github.com/gin-contrib/sse v0.1.0/go.mod h1:RHrZQHXnP2xjPF+u1gW/2HnVO7nvIa9PG3Gm+fLHvGI=
 github.com/gin-gonic/gin v1.7.2 h1:Tg03T9yM2xa8j6I3Z3oqLaQRSmKvxPd6g/2HJ6zICFA=
