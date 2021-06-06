@@ -40,7 +40,7 @@ func Get(c *gin.Context) {
 		return
 	}
 
-	userId, idErr := getUserId(c.Param("user_id"))
+	userId, idErr := getUserId(c.Param("userId"))
 	if idErr != nil {
 		c.JSON(idErr.Status(), idErr)
 		return
