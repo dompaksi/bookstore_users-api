@@ -129,7 +129,7 @@ func (user *User) FindByEmailAndPassword() rest_errors.RestErr {
 	}
 	defer stmt.Close()
 
-	result := stmt.QueryRow(user.Email, user.Password, user.Status)
+	result := stmt.QueryRow(user.Email, user.Password, StatusActive)
 	if getErr := result.Scan(&user.Id, &user.FirstName, &user.LastName, &user.Email, &user.DateCreated, &user.Status); getErr != nil {
 		if strings.Contains(getErr.Error(), mysql_utils.ErrorNoRows) {
 			return rest_errors.NewNotFoundError("invalid user credentials")
